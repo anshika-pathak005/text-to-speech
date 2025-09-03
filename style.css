@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* color: white; */
+}
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    padding: clamp(20px, 5vw, 50px);
+    background: linear-gradient(90deg, rgb(76, 2, 76), rgb(43, 8, 76));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: clamp(24px, 5vw, 40px); /* scales from 24px to 40px based on screen width */
+    color: white;
+    text-shadow: 0 0 5px #fff;
+    margin: 10px;
+    text-align: center; /* always center */
+}
+
+.hero h1 span {
+    color: rgb(210, 24, 238);
+    text-shadow: 0 0 5px rgb(210, 24, 238);
+}
+.hero textarea {
+    width: clamp(250px, 80%, 600px);
+    height: clamp(150px, 40vh, 300px);
+    background-color: rgba(128, 128, 128, 0.5);
+    color: white;
+    font-size: clamp(14px, 1.2vw, 19px);
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.row {
+    width: clamp(250px, 90%, 500px); /* adjusts width responsively */
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(10px, 2vw, 20px); /* responsive gap */
+    flex-wrap: wrap; /* wrap on very small screens */
+}
+
+button {
+    flex: 1; /* allows it to shrink with select */
+    padding: clamp(8px, 1vw, 12px) clamp(15px, 2vw, 20px);
+    border-radius: 20px;
+    font-size: clamp(12px, 1vw, 15px);
+    background-color: rgb(235, 203, 240);
+    color: #000;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+button img{
+    width: 26%;
+}
+button:hover {
+    background-color: rgb(204, 162, 210);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(154, 114, 160);
+    cursor: pointer;
+}
+
+.row > * {
+    min-width: 0;
+}
+
+select {
+    flex: 2;
+    padding-left:10px;
+    padding-right: 40px;
+    height: clamp(35px, 4vw, 40px);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.5);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: clamp(12px, 1.2vw, 16px);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><polygon points="0,0 12,0 6,6" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+    min-width: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+select:hover {
+    background-color: rgba(128, 128, 128, 0.7);
+}
