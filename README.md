@@ -1,7 +1,6 @@
 # 🗣 Text-to-Speech Converter
 
 A responsive web app built with HTML, CSS, and JavaScript that converts written text into spoken words using the Web Speech API (SpeechSynthesis).
-
 This project was created to practice DOM manipulation, browser APIs, and responsive design.
 
 Note: Currently tested and works best on Windows browsers because voice availability depends on the operating system.
@@ -18,13 +17,13 @@ Note: Currently tested and works best on Windows browsers because voice availabi
 ## 📂 Project Structure
 
 ```
-
 text-to-speech/
 ├── index.html   # Page structure
 ├── style.css    # Styling and responsive layout
 └── index.js     # Speech synthesis logic and event handling
-
 ```
+## Screenshot
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/c346cec2-9ddc-4a99-8d28-e05c571b8cda" />
 
 ## 🚀 Installation / Usage
 
@@ -32,11 +31,7 @@ text-to-speech/
 2. Open `index.html` in any modern browser (preferably on Windows).  
 3. Type your text into the box.  
 4. Select a voice (if available).  
-5. Click Listen to hear it spoken aloud.  
-
-## 📸 Screenshot
-
-
+5. Click Listen to hear it spoken aloud.
 
 ## 💡 What I Learned
 
