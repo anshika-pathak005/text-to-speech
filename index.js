@@ -1,3 +1,14 @@
+// Check if Windows OS
+function isWindows() {
+  return navigator.userAgent.indexOf("Windows") !== -1;
+}
+
+if (isWindows()) {
+  console.log("Windows detected, running site...");
+} else {
+  document.body.innerHTML = "<h2>Sorry, this site works only on Windows.</h2>";
+}
+
 let speech = new SpeechSynthesisUtterance();
 
 let listenButton = document.querySelector(".btn");
@@ -32,4 +43,5 @@ listenButton.addEventListener("click", () => {
 
   speech.text = textArea.value;
   window.speechSynthesis.speak(speech);
+
 });
