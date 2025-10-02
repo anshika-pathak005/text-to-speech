@@ -2,6 +2,7 @@
 
 A responsive web app built with HTML, CSS, and JavaScript that converts written text into spoken words using the Web Speech API (SpeechSynthesis).
 This project was created to practice DOM manipulation, browser APIs, and responsive design.
+### 🔗 [Live Demo](https://text-to-speech-9l4e.onrender.com) 
 
 Note: Currently tested and works best on Windows browsers because voice availability depends on the operating system.
 
